@@ -10,8 +10,8 @@ cdef nogil:
     int WHISPER_CHUNK_SIZE = 30
     int SAMPLE_RATE = 16000
     char* TEST_FILE = b'test.wav'
-    char* DEFAULT_MODEL = b'ggml-tiny.bin'
-    char* LANGUAGE = b'fr'
+    char* DEFAULT_MODEL = b'ggml-large.bin'
+    char* LANGUAGE = b'vi'
     ctypedef struct audio_data:
         float* frames;
         int n_frames;
